@@ -1,0 +1,28 @@
+Proyecto 2 — Sistema de Nómina de Empleados 💼
+¿Qué debe hacer el programa?
+Imagina que eres el contador de una empresa y necesitas un sistema para gestionar la nómina de empleados. El programa debe:
+
+Funcionalidades 📋
+1️⃣  Registrar empleado
+2️⃣  Ver todos los empleados
+3️⃣  Calcular nómina de un empleado
+4️⃣  Ver nómina completa de la empresa
+5️⃣  Buscar empleado
+6️⃣  Eliminar empleado
+7️⃣  Empleado mejor y peor pagado
+8️⃣  Salir
+
+Reglas del proyecto 📌
+
+Usa funciones para cada opción
+Los empleados en una lista de diccionarios
+Inicia con 3 empleados ya cargados
+Los cálculos de nómina deben incluir:
+
+Salario base         →  el salario del empleado
+Horas extra          →  hora_extra = (salario / 240) * 1.5
+Salud (4%)           →  salario * 0.04
+Pensión (4%)         →  salario * 0.04
+Auxilio transporte   →  117172 fijo
+──────────────────────────────────
+Neto a pagar         →  salario + horas_extra + auxilio - salud - pension
