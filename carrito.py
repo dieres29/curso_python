@@ -164,6 +164,50 @@ def ver_catalogo():
     print(f"📊 Total de productos: {len(catalogo)}".center(55))
     print("=" * 55)
 
+def mostar_menu_cliente():
+    while True:
+        print(f"\n{'=' * 40}")
+        print("MENÚ CLIENTE".center(40))
+        print("=" * 40)
+        print("1️⃣  Ver catálogo")
+        print("2️⃣  Agregar producto a carrito")
+        print("3️⃣  Ver carrito")
+        print("4️⃣  Eliminar del carrito")
+        print("5️⃣  Realizar compra")
+        print("6️⃣  Ver historial")
+        print("7️⃣  Volver al menu principal    ")
+        print("=" * 40)
+
+        opcion = input("\n ELIJE UNA OPCION: ")
+        if opcion == "1":
+            ver_catalogo()
+        elif opcion == "2":
+            agregar_carrito()
+        elif opcion == "3":
+            ver_carrito()
+        elif opcion == "4":
+            eliminar_carrito
+        elif opcion == "5":
+            realizar_compra()
+        elif opcion == "6":
+            ver_historial()
+        elif opcion == "7":
+            print("🔙 Volviendo al menú principal...") 
+            break 
+        else:
+             print("❗❗OPCION INVALIDA❗❗")  
+
+
+              
+
+             
+         
+
+                   
+
+             
+
+
 
   
     
