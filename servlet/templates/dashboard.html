@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="welcome-container">
+    <div style="background: white; border-radius: 20px; padding: 50px; text-align: center;">
+        <div class="avatar">👤</div>
+        <h1>¡Bienvenido, {{ nombre }}!</h1>
+        <p>Has iniciado sesión correctamente</p>
+        
+        <div class="user-info">
+            <p><strong>📧 Correo:</strong> {{ email }}</p>
+            <p><strong>🕐 Hora:</strong> {{ fecha }}</p>
+            <p><strong>💻 IP:</strong> {{ ip }}</p>
+        </div>
+        
+        <a href="/logout" class="btn" style="background: var(--secondary); text-decoration: none;">🔓 Cerrar Sesión</a>
+        <br>
+        <a href="/" class="back-link">← Volver al inicio</a>
+    </div>
+</div>
+{% endblock %}
