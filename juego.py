@@ -1,5 +1,8 @@
 import random
+<<<<<<< HEAD
 ranking = []
+=======
+>>>>>>> 6b256d539c3f59992890a1c2d64694d673d3a5a3
 
 def menu():
     print(f"\n{'=' * 40}")
@@ -98,13 +101,18 @@ def jugar():
     nivel, limite, intentos_max = elegir_nivel()
     numero_secreto = random.randint(1, limite)
     intentos_usados = 0
+<<<<<<< HEAD
     adivinado = False
+=======
+    adivindo = False
+>>>>>>> 6b256d539c3f59992890a1c2d64694d673d3a5a3
 
     print(f"\n🔢 Adivina el número entre 1 y {limite}")
     print(f"💪 Tienes {intentos_max} intentos")
     print("-" * 40)
 
 
+<<<<<<< HEAD
     while intentos_usados < intentos_max and not adivinado:
         intento = int(input("por favor ingrese numero: "))
         intentos_usados += 1
@@ -202,6 +210,8 @@ while True:
             
 
 
+=======
+>>>>>>> 6b256d539c3f59992890a1c2d64694d673d3a5a3
 
      
 

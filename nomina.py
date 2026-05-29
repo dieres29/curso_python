@@ -48,11 +48,18 @@ def registro_empleado():
 
 def ver_empleados():
     if not empleados:
+<<<<<<< HEAD
         
         
         
     
      print(f"\n{'=' * 75}")
+=======
+        print(f"❗ lista empleados vacia")
+        return
+    
+    print(f"\n{'=' * 75}")
+>>>>>>> 6b256d539c3f59992890a1c2d64694d673d3a5a3
     print(f"{'NOMBRE':<20} {'CARGO':<12} {'SALARIO':<12} {'DEPARTAMENTO':<12}")
     print(f"{'=' * 75}")
     

@@ -17,7 +17,11 @@ La factura debe verse así:
 ----------------------------------------
   TOTAL     : $2,975,000"""
 
+<<<<<<< HEAD
 def calcular_subtotal(precio, cantidad):
+=======
+"""def calcular_subtotal(precio, cantidad):
+>>>>>>> 6b256d539c3f59992890a1c2d64694d673d3a5a3
 
     subtotal = precio * cantidad 
     return subtotal
@@ -51,7 +55,11 @@ precio = int(input("ingrese precio del producto: $ "))
 nombre = input("ingrese nombre producto: ")
 cantidad = int(input("ingrese cantidad de articulos: # "))
 tienda = input("ingrese tienda: ")
+<<<<<<< HEAD
 mostrar_factura(nombre, tienda, precio, cantidad )
+=======
+mostrar_factura(nombre, tienda, precio, cantidad )"""
+>>>>>>> 6b256d539c3f59992890a1c2d64694d673d3a5a3
 
 
 

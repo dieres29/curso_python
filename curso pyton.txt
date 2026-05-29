@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Proyecto 2 — Sistema de Nómina de Empleados 💼
 ¿Qué debe hacer el programa?
 Imagina que eres el contador de una empresa y necesitas un sistema para gestionar la nómina de empleados. El programa debe:
@@ -26,3 +27,24 @@ Pensión (4%)         →  salario * 0.04
 Auxilio transporte   →  117172 fijo
 ──────────────────────────────────
 Neto a pagar         →  salario + horas_extra + auxilio - salud - pension
+=======
+buena forma de no perderte en la clase 😁😆:
+
+1_DIA : 01:34:00
+2_DIA: 02:24:00
+3_dia : 03:01:19
+4_dia : 04:05:16
+5_dia : 04:32:18
+6_dia: 05:08:28
+7_dia: 05:57:21
+08_dia: 06:37:02
+09_dia: 07:23:41
+10_dia: 08:08:50
+11_dia: 08:58:52
+12_dia: 09:36:23
+13_DIA : FIN DEL CURSO 10:06:45
+
+https://www.youtube.com/watch?v=Kp4Mvapo5kc
+
+time = 4:31:23
+>>>>>>> 6b256d539c3f59992890a1c2d64694d673d3a5a3
