@@ -42,7 +42,7 @@ def mostrar_menu_inicio():
     print("=" * 40)
 
 #funciones admin
-def verficiar_contraseña():
+def verficiar_contrasena():
     usuario = input("por favor ingrese NOMBRE DE USUARIO: ")
     contrasena = input("ingresar CONTRASEÑA POR FAVOR ")
     
@@ -131,8 +131,9 @@ def eliminar_producto_catalogo():
                 catalogo.remove(producto)
                 print(F"PRODUCTO ID {producto_eliminar}  ELIMINADO DEL CATALOGO")
                 return
-        print(f"PRODUCTO A ELIMINAR CON ID {producto_eliminar} NO ENCONTRADO . INTENTE DE NUEVO")    
- 
+        print(f"PRODUCTO A ELIMINAR CON ID {producto_eliminar} NO ENCONTRADO . INTENTE DE NUEVO")
+            
+
 def ver_catalogo():
     if not catalogo:
         print("📦  EL CATALOGO ESTA VACIO 📦")
@@ -195,20 +196,66 @@ def mostar_menu_cliente():
             print("🔙 Volviendo al menú principal...") 
             break 
         else:
-             print("❗❗OPCION INVALIDA❗❗")  
-
-
-              
-
-             
-         
-
-                   
-
-             
+            print("❗❗OPCION INVALIDA❗❗") 
 
 
 
-  
-    
- 
+def agregar_carrito():
+    #llamar funcion ver catalogo#
+    ver_catalogo()
+    while True:
+        id_buscar = int(input("Ingrese por favor el ID del prodcuto: "))
+
+        producto_encontrado = None
+
+        for producto in catalogo:
+            if producto["id"] == id_buscar:
+                producto_encontrado = producto
+                break
+
+
+        if producto_encontrado is None:
+            print("❌ Producto no encontrado ❌")
+        else:
+            print(f"👌 Encontrado: {producto_encontrado['nombre']}")    
+            print(f"📦 Stock disponible: {producto_encontrado['stock']} unidades")
+            
+
+            while True:
+                cantidad = int(input("Cuantas unidades desea agregar: "))
+                if cantidad <= producto_encontrado['stock']:
+                    break
+                else:
+                    print(f"❌ Stock insuficiente. Solo hay {producto_encontrado['stock']} unidades")
+
+
+
+        
+            item_existente = None
+            for item in carrito:
+                if item['id'] == id_buscar:
+                    item_existente = item
+                    break
+
+
+            if item_existente:
+                item_existente['cantidad'] += cantidad  
+                item_existente['subtotal'] = item_existente['precio'] * item_existente['cantidad'] 
+                print(f"Se sumeron {cantidad} unidades. Total en carrito : {item_existente['cantidad']}") 
+            else:
+                carrito.append({
+                    "id":producto_encontrado["id"],
+                    "nombre":producto_encontrado["nombre"],
+                    "precio":producto_encontrado["precio"],
+                    "cantidad":cantidad,
+                    "subtotal":producto_encontrado["precio"] * cantidad
+                })
+                print(f"✔ {cantidad} x {producto_encontrado['nombre']} agregado al carrito")
+
+            break
+
+
+agregar_carrito()
+
+
+
